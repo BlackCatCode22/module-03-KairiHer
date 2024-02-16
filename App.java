@@ -1,21 +1,22 @@
-package mystudent;
+import mystudents.Student;
 
 public class App {
-    public static void main(String[] args) {
-        System.out.println("\n Hello from class App \n\n");
+    public static void main(String [] args) {
 
-        // Create a student object
         Student myStudent = new Student();
+        myStudent.firstName = "Kairi";
+        myStudent.lastName = "Her";
+        myStudent.major = "Web_Development";
+        myStudent.gpa = 2.478;
+        myStudent.age= 19;
+        myStudent.onProbation = true;
 
-        // Fill the new myStudent object's data fields
-        myStudent.firstName = "Dennis";
-        myStudent.lastname = "Mohle";
-        myStudent.gpa = 3.4;
-        myStudent.major = "Computer Science";
-        myStudent.city = "Fresno";
-
-        System.out.println("\n The first name of the student is: " + myStudent.firstName + "\n");
-        System.out.println("\n The last name of the student is: " + myStudent.lastname + "\n");
-
+        Student myStudent2 = new Student();
+        myStudent.firstName = "Josh";
+        myStudent.lastName = "Hosh";
+        myStudent.major = "Math";
+        myStudent.gpa = 3.5;
+        myStudent.age= 23;
+        myStudent.onProbation = false;
     }
 }
